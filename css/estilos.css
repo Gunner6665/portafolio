@@ -1,0 +1,780 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+header, footer {
+  background: linear-gradient(to right, #2c3e50, #4b6cb7);
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+section {
+  background-color: #2a2a2a;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  animation: fadeInUp 1s ease-out;
+}
+
+h2 {
+  color: #c0c0c0;
+  margin-bottom: 1rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu {
+  background-color: #2c3e50;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu li a:hover {
+  background-color: #4b6cb7;
+  transform: scale(1.05);
+}
+
+/* === Estilos para el formulario de contacto === */
+.contacto-section {
+    background: linear-gradient(rgba(30,30,30,0.8), rgba(30,30,30,0.8)), url('fondo-contacto.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 3rem;
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-out;
+    color: #ffffff;
+}
+
+.contacto-icono {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #4b6cb7;
+}
+
+.contacto-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4b6cb7;
+}
+
+.contacto-form button {
+    background-color: #4b6cb7;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto-form button:hover {
+    background-color: #3a539b;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .contacto-section {
+        padding: 2rem 1rem;
+    }
+}
+
+
+/* === Estilos para la sección de metodologías === */
+.metodologias-section {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-out;
+    color: #e0e0e0;
+}
+
+.metodologias-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #c0c0c0;
+    margin-bottom: 2rem;
+}
+
+.metodologia-bloque {
+    background-color: #333;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid #4b6cb7;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.metodologia-bloque:hover {
+    transform: translateY(-5px);
+}
+
+.metodologia-bloque h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.metodologia-bloque p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+.metodologia-bibliografia {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #555;
+}
+
+.metodologia-bibliografia h3 {
+    font-size: 1.2rem;
+    color: #c0c0c0;
+    margin-bottom: 1rem;
+}
+
+.metodologia-bibliografia ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.metodologia-bibliografia li {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    color: #bbbbbb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .metodologias-section {
+        padding: 1rem;
+    }
+
+    .metodologia-bloque {
+        padding: 1rem;
+    }
+
+    .metodologia-bloque h3 {
+        font-size: 1.1rem;
+    }
+
+    .metodologia-bloque p {
+        font-size: 0.95rem;
+    }
+}
+
+/* === Estilos para la sección de biografía === */
+.biografia-section {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-out;
+    color: #e0e0e0;
+}
+
+.biografia-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.biografia-header h2 {
+    font-size: 2rem;
+    color: #c0c0c0;
+}
+
+.biografia-info {
+    background-color: #333;
+    padding: 1rem 1.5rem;
+    border-left: 5px solid #4b6cb7;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+}
+
+.biografia-info p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #dddddd;
+}
+
+.biografia-bloque {
+    background-color: #333;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid #4b6cb7;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.biografia-bloque:hover {
+    transform: translateY(-5px);
+}
+
+.biografia-bloque h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.biografia-bloque p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .biografia-section {
+        padding: 1rem;
+    }
+
+    .biografia-bloque {
+        padding: 1rem;
+    }
+
+    .biografia-bloque h3 {
+        font-size: 1.1rem;
+    }
+
+    .biografia-bloque p {
+        font-size: 0.95rem;
+    }
+}
+
+/* === Estilos para la sección de estrategias === */
+.estrategias-section {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-out;
+    color: #e0e0e0;
+}
+
+.estrategias-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #c0c0c0;
+    margin-bottom: 2rem;
+}
+
+.estrategia-bloque {
+    background-color: #333;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid #4b6cb7;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.estrategia-bloque:hover {
+    transform: translateY(-5px);
+}
+
+.estrategia-bloque h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.estrategia-bloque p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+.estrategia-bibliografia {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #555;
+}
+
+.estrategia-bibliografia h3 {
+    font-size: 1.2rem;
+    color: #c0c0c0;
+    margin-bottom: 1rem;
+}
+
+.estrategia-bibliografia ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.estrategia-bibliografia li {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    color: #bbbbbb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .estrategias-section {
+        padding: 1rem;
+    }
+
+    .estrategia-bloque {
+        padding: 1rem;
+    }
+
+    .estrategia-bloque h3 {
+        font-size: 1.1rem;
+    }
+
+    .estrategia-bloque p {
+        font-size: 0.95rem;
+    }
+}
+
+/* === Estilos para la sección de planeamiento === */
+.planeamiento-section {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-out;
+    color: #e0e0e0;
+}
+
+.planeamiento-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #c0c0c0;
+    margin-bottom: 2rem;
+}
+
+.planeamiento-bloque {
+    background-color: #333;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid #4b6cb7;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.planeamiento-bloque:hover {
+    transform: translateY(-5px);
+}
+
+.planeamiento-bloque h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.planeamiento-bloque p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+.planeamiento-bibliografia {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #555;
+}
+
+.planeamiento-bibliografia h3 {
+    font-size: 1.2rem;
+    color: #c0c0c0;
+    margin-bottom: 1rem;
+}
+
+.planeamiento-bibliografia ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.planeamiento-bibliografia li {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    color: #bbbbbb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .planeamiento-section {
+        padding: 1rem;
+    }
+
+    .planeamiento-bloque {
+        padding: 1rem;
+    }
+
+    .planeamiento-bloque h3 {
+        font-size: 1.1rem;
+    }
+
+    .planeamiento-bloque p {
+        font-size: 0.95rem;
+    }
+}
+
+/* === Estilos para la sección de proyectos === */
+.proyectos-section {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-out;
+    color: #e0e0e0;
+}
+
+.proyectos-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #c0c0c0;
+    margin-bottom: 2rem;
+}
+
+.proyecto-bloque {
+    background-color: #333;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid #4b6cb7;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.proyecto-bloque:hover {
+    transform: translateY(-5px);
+}
+
+.proyecto-bloque h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.proyecto-bloque p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+.proyecto-bibliografia {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #555;
+}
+
+.proyecto-bibliografia h3 {
+    font-size: 1.2rem;
+    color: #c0c0c0;
+    margin-bottom: 1rem;
+}
+
+.proyecto-bibliografia ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.proyecto-bibliografia li {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    color: #bbbbbb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .proyectos-section {
+        padding: 1rem;
+    }
+
+    .proyecto-bloque {
+        padding: 1rem;
+    }
+
+    .proyecto-bloque h3 {
+        font-size: 1.1rem;
+    }
+
+    .proyecto-bloque p {
+        font-size: 0.95rem;
+    }
+}
+
+/* === Estilos para la sección de recursos === */
+.recursos-section {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-out;
+    color: #e0e0e0;
+}
+
+.recursos-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #c0c0c0;
+    margin-bottom: 2rem;
+}
+
+.recurso-bloque {
+    background-color: #333;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid #4b6cb7;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.recurso-bloque:hover {
+    transform: translateY(-5px);
+}
+
+.recurso-bloque h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.recurso-bloque p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+.recurso-bloque a {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.5rem 1rem;
+    background-color: #4b6cb7;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.recurso-bloque a:hover {
+    background-color: #3a539b;
+}
+
+.recurso-bibliografia {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #555;
+}
+
+.recurso-bibliografia h3 {
+    font-size: 1.2rem;
+    color: #c0c0c0;
+    margin-bottom: 1rem;
+}
+
+.recurso-bibliografia ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.recurso-bibliografia li {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    color: #bbbbbb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .recursos-section {
+        padding: 1rem;
+    }
+
+    .recurso-bloque {
+        padding: 1rem;
+    }
+
+    .recurso-bloque h3 {
+        font-size: 1.1rem;
+    }
+
+    .recurso-bloque p {
+        font-size: 0.95rem;
+    }
+}
+
+/* === Estilos para la sección de contacto === */
+.contacto-section {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-out;
+    color: #e0e0e0;
+}
+
+.contacto-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #c0c0c0;
+    margin-bottom: 2rem;
+}
+
+.contacto-bloque {
+    background-color: #333;
+    padding: 1.5rem;
+    border-left: 5px solid #4b6cb7;
+    border-radius: 6px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacto-form label {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4b6cb7;
+}
+
+.contacto-form button {
+    background-color: #4b6cb7;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto-form button:hover {
+    background-color: #3a539b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contacto-section {
+        padding: 1rem;
+    }
+
+    .contacto-bloque {
+        padding: 1rem;
+    }
+
+    .contacto-form input,
+    .contacto-form textarea {
+        font-size: 0.95rem;
+    }
+
+    .contacto-form button {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* Fondo de bienvenida */
+.fondo-bienvenida {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 2s ease-out;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.imagen-bienvenida {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  opacity: 0.95;
+  transition: opacity 1s ease;
+  border-radius: 10px;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(1.05); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Animación de salida */
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 0.95; }
+  to { opacity: 0; }
+}

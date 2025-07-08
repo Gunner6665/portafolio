@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+
+  <!--<link rel="icon" href="pictures/favicon.png" type="image/png">-->
+  <title>Portafolio | Ing. Gianfranco Fontana Abarca</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/estilos-menu.css" />
+  <link rel="stylesheet" href="css/estilos-menu-lateral.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #1e1e1e, #121212);
+      color: #e0e0e0;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4b6cb7, #182848);
+      padding: 3rem 1rem;
+      text-align: center;
+      color: white;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      font-weight: normal;
+      color: #d0d0d0;
+    }
+
+    footer {
+      background: linear-gradient(to right, #2c3e50, #4b6cb7);
+      padding: 1rem;
+      text-align: center;
+      color: white;
+      font-size: 0.9rem;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const fondo = document.getElementById("fondo-inicial");
+    const botones = document.querySelectorAll(".menu-lateral button");
+
+    botones.forEach(boton => {
+      boton.addEventListener("click", () => {
+        if (fondo) {
+          fondo.classList.add("fade-out");
+          setTimeout(() => fondo.remove(), 1000);
+        }
+      });
+    });
+  });
+</script>
+  <header>
+    <h1>Portafolio Profesional</h1>
+    <h2>👨‍💻 Ing. Gianfranco Fontana Abarca</h2>
+  </header>
+
+  <main>
+    <div id="contenedor-fondo" ></div>
+    <div id="contenedor-biografia" style="display:none;"></div>
+    <div id="contenedor-metodologias" style="display:none;"></div>
+    <div id="contenedor-estrategias" style="display:none;"></div>
+    <div id="contenedor-planeamiento" style="display:none;"></div>
+    <div id="contenedor-proyectos" style="display:none;"></div>
+    <div id="contenedor-menu" style="display:none;"></div>
+    <div id="contenedor-recursos" style="display:none;"></div>
+    <div id="contenedor-contacto" style="display:none;"></div>
+  </main>
+
+  <footer>
+    <p>© 2025 🌐 Ing. Gianfranco Fontana Abarca | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/biografia.js"></script>
+  <script src="js/metodologias.js"></script>
+  <script src="js/estrategias.js"></script>
+  <script src="js/planeamiento.js"></script>
+  <script src="js/proyectos.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/recursos.js"></script>
+  <script src="js/menu-lateral.js"></script>
+  <script src="js/contacto.js"></script>
+  <script src="js/fondo.js"></script>
+
+</body>
+</html>
