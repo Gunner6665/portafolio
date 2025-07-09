@@ -778,3 +778,14 @@ h2 {
   from { opacity: 0.95; }
   to { opacity: 0; }
 }
+
+.hamburguesa {
+  font-size: 1.5rem; /* tamaño general */
+}
+
+.hamburguesa span {
+  font-size: 0.75rem; /* tamaño solo para el texto */
+  margin-left: 0.25rem;
+  vertical-align: middle;
+}
+
